@@ -1,0 +1,140 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.profile-image {
+  box-shadow: 0 0 100px rgba(56, 189, 248, 0.25);
+}
+
+.portrait-glow {
+  filter: drop-shadow(0 0 10px rgba(56, 189, 248, 0.6))
+    drop-shadow(0 0 60px rgba(56, 189, 248, 0.4))
+    drop-shadow(0 0 90px rgba(14, 165, 233, 0.2));
+  box-shadow:
+    0 0 50px rgba(56, 189, 248, 0.4),
+    0 0 100px rgba(14, 165, 233, 0.2);
+  border-radius: 12px;
+  transition:
+    filter 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.portrait-glow:hover {
+  filter: drop-shadow(0 0 40px rgba(56, 189, 248, 0.8))
+    drop-shadow(0 0 80px rgba(56, 189, 248, 0.6))
+    drop-shadow(0 0 120px rgba(14, 165, 233, 0.3));
+  box-shadow:
+    0 0 70px rgba(56, 189, 248, 0.6),
+    0 0 130px rgba(14, 165, 233, 0.3);
+}
+
+.card-glow {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.75rem;
+  border-radius: 0.75rem;
+  border: 1px solid #475569;
+  background-color: #334155;
+  padding: 1rem;
+  text-align: left;
+  color: #f8fafc;
+  box-shadow:
+    0 0 18px rgba(56, 189, 248, 0.18),
+    0 0 40px rgba(14, 165, 233, 0.12);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    background-color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.card-glow:hover {
+  transform: translateY(-4px) scale(1.02);
+  background-color: #475569;
+  box-shadow:
+    0 0 28px rgba(56, 189, 248, 0.32),
+    0 0 60px rgba(14, 165, 233, 0.2);
+}
+
+.card-icon {
+  margin-bottom: 0.25rem;
+  font-size: 2rem;
+  color: #38bdf8;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #f8fafc;
+}
+
+.card-text {
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: left;
+  color: #94a3b8;
+}
+
+.tech-card {
+  align-items: center;
+  justify-content: center;
+  min-height: 120px;
+  text-align: center;
+}
+
+.tech-icon-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.2rem;
+  color: #38bdf8;
+}
+
+.tech-icon {
+  width: 2.2rem;
+  height: 2.2rem;
+}
+
+.tech-name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #f8fafc;
+}
+
+.typewriter {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid #c1c18c;
+  width: 0;
+  animation: typing 1.6s steps(22, end) forwards;
+}
+
+.typewriter-1 {
+  animation-delay: 0.2s;
+}
+
+.typewriter-2 {
+  animation-delay: 2.2s;
+}
+
+.typewriter-3 {
+  animation-delay: 4.2s;
+}
+
+.typewriter-3 {
+  animation-fill-mode: forwards;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
