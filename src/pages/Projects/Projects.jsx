@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Filter from "../../components/Filter/Filter";
-import { projects } from "../../projectsDeatial/Projects";
+import { projects } from "../../projectsDeatial/projects.js";
 
 function Projects() {
   const [activeFilter, setActiveFilter] = useState("All");
