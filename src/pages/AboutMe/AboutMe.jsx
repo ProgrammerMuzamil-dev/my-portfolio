@@ -181,15 +181,15 @@ function AboutMe() {
 
           <div className="flex flex-wrap justify-center gap-5 mt-10">
             <div className="px-6 py-3 border rounded-full bg-white/5 border-white/10 backdrop-blur-xl">
-              🚀 Front-end Developer
+              Front-end Developer
             </div>
 
             <div className="px-6 py-3 border rounded-full bg-white/5 border-white/10 backdrop-blur-xl">
-              ⚡ React Developer
+              React Developer
             </div>
 
             <div className="px-6 py-3 border rounded-full bg-white/5 border-white/10 backdrop-blur-xl">
-              💙 Always Learning
+              Always Learning
             </div>
           </div>
           <div className="mx-auto mt-12 h-[2px] w-40 rounded-full bg-gradient-to-r from-transparent via-[#38BDF8] to-transparent"></div>
@@ -197,7 +197,6 @@ function AboutMe() {
         <div className="relative mt-24 space-y-16">
           {" "}
           <div className="grid gap-8 lg:grid-cols-3">
-            {/* About Card */}
             <div
               data-aos="fade-right"
               className="lg:col-span-2 rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl p-10 hover:border-[#38BDF8]/50 hover:-translate-y-2 transition-all duration-500"
@@ -347,7 +346,7 @@ function AboutMe() {
                 <div className="absolute -left-[13px] w-6 h-6 rounded-full bg-gradient-to-r from-cyan-400 to-blue-500 shadow-[0_0_25px_#38BDF8] animate-pulse"></div>
 
                 <h3 className="text-2xl font-semibold text-white">
-                  Building Real Projects 🚀
+                  Building Real Projects
                 </h3>
 
                 <p className="mt-2 text-[#94A3B8]">
@@ -405,16 +404,18 @@ function AboutMe() {
             data-aos="zoom-in"
             className=" shadow-inner   shadow-[#38BDF8] p-4 mt-16 rounded-2xl bg-[#1E293B]"
           >
-            <h1
-              data-aos="fade-up"
-              className="flex items-center m-5 gap-3 text-5xl text-[#F8FAFC] font-bold"
-            >
-              {" "}
-              <div className="w-20 h-20 rounded-3xl bg-[#38BDF8]/10 flex items-center justify-center">
-                <FaLaptopCode className="text-[2.4rem] text-[#38BDF8]" />
+            <div className="flex items-center gap-5 mb-10">
+              <div className="w-16 h-16 rounded-2xl bg-[#38BDF8]/10 flex items-center justify-center">
+                <FaTools className="text-3xl text-[#38BDF8]" />
               </div>
-              Technologies
-            </h1>
+
+              <div>
+                <h2 className="text-4xl font-bold text-white">Skill</h2>
+                <p className="text-[#94A3B8] mt-2">
+                  My tools which I use to bluid web.
+                </p>
+              </div>
+            </div>
             <div className="grid grid-cols-2 gap-6 mt-4 md:grid-cols-3 lg:grid-cols-5">
               {technologies.map((tech, index) => (
                 <div
@@ -434,7 +435,6 @@ function AboutMe() {
             data-aos="fade-up"
             className="rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl p-10 hover:border-[#38BDF8]/50 transition-all duration-500"
           >
-            {/* Heading */}
             <div className="flex items-center gap-5 mb-10">
               <div className="w-16 h-16 rounded-2xl bg-[#38BDF8]/10 flex items-center justify-center">
                 <FaGraduationCap className="text-3xl text-[#38BDF8]" />
@@ -493,7 +493,6 @@ function AboutMe() {
             data-aos="fade-up"
             className="rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl p-10 hover:border-[#38BDF8]/50 transition-all duration-500"
           >
-            {/* Heading */}
             <div className="flex items-center gap-5 mb-10">
               <div className="w-16 h-16 rounded-2xl bg-[#38BDF8]/10 flex items-center justify-center">
                 <FaRocket className="text-3xl text-[#38BDF8]" />

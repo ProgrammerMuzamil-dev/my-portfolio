@@ -37,7 +37,6 @@ function ContectMe() {
       <section className="mt-10 overflow-hidden">
         <div>
           <div data-aos="fade-up" className="mb-16 text-center">
-            {/* Small Label */}
             <div className="flex items-center justify-center gap-3 mb-6">
               <span className="h-[2px] w-10 bg-gradient-to-r from-transparent to-cyan-400"></span>
 
@@ -48,7 +47,6 @@ function ContectMe() {
               <span className="h-[2px] w-10 bg-gradient-to-l from-transparent to-cyan-400"></span>
             </div>
 
-            {/* Main Heading */}
             <h1 className="text-5xl font-extrabold leading-tight md:text-6xl lg:text-7xl">
               <span className="text-white">Let's Work </span>
 
@@ -116,7 +114,7 @@ hover:shadow-[0_0_40px_rgba(56,189,248,.15)]
 "
                   >
                     {/* Left Side */}
-                    <div className="flex items-center gap-5">
+                    <div className="flex min-w-0 flex-1 items-center gap-5">
                       <div
                         className="
       h-16 w-16
@@ -132,7 +130,7 @@ hover:shadow-[0_0_40px_rgba(56,189,248,.15)]
                         <FaEnvelope className="text-3xl text-cyan-400" />
                       </div>
 
-                      <div>
+                      <div className="min-w-0">
                         <h3
                           data-aos="fade-left"
                           className="text-2xl font-semibold text-white"
@@ -140,7 +138,7 @@ hover:shadow-[0_0_40px_rgba(56,189,248,.15)]
                           Email
                         </h3>
 
-                        <p className="text-lg text-slate-400">
+                        <p className="break-words text-lg text-slate-400">
                           muzamil692008@gmail.com
                         </p>
                       </div>
@@ -170,7 +168,7 @@ hover:shadow-[0_0_40px_rgba(56,189,248,.15)]
   "
                   >
                     {/* Left Side */}
-                    <div className="flex items-center gap-5">
+                    <div className="flex min-w-0 flex-1 items-center gap-5">
                       <div
                         className="
         h-16 w-16
@@ -186,7 +184,7 @@ hover:shadow-[0_0_40px_rgba(56,189,248,.15)]
                         <FaPhoneAlt className="text-3xl text-green-400" />
                       </div>
 
-                      <div>
+                      <div className="min-w-0">
                         <h3
                           data-aos="fade-left"
                           className="text-2xl font-semibold text-white"
@@ -194,7 +192,7 @@ hover:shadow-[0_0_40px_rgba(56,189,248,.15)]
                           Phone
                         </h3>
 
-                        <p className="text-lg text-slate-400">
+                        <p className="break-words text-lg text-slate-400">
                           +92 345 9842961
                         </p>
                       </div>
@@ -226,7 +224,7 @@ hover:shadow-[0_0_40px_rgba(56,189,248,.15)]
   "
                   >
                     {/* Left Side */}
-                    <div className="flex items-center gap-5">
+                    <div className="flex min-w-0 flex-1 items-center gap-5">
                       <div
                         className="
         h-16 w-16
@@ -242,7 +240,7 @@ hover:shadow-[0_0_40px_rgba(56,189,248,.15)]
                         <FaLocationArrow className="text-3xl text-purple-400" />
                       </div>
 
-                      <div>
+                      <div className="min-w-0">
                         <h3
                           data-aos="fade-left"
                           className="text-2xl font-semibold text-white"
@@ -250,7 +248,7 @@ hover:shadow-[0_0_40px_rgba(56,189,248,.15)]
                           Location
                         </h3>
 
-                        <p className="text-lg text-slate-400">
+                        <p className="break-words text-lg text-slate-400">
                           Tank , KpK , Pakistan
                         </p>
                       </div>
@@ -281,7 +279,7 @@ hover:shadow-[0_0_40px_rgba(56,189,248,.15)]
   "
                   >
                     {/* Left Side */}
-                    <div className="flex items-center gap-5">
+                    <div className="flex min-w-0 flex-1 items-center gap-5">
                       <div
                         className="
         h-16 w-16
@@ -297,7 +295,7 @@ hover:shadow-[0_0_40px_rgba(56,189,248,.15)]
                         <FaGithub className="text-3xl text-white" />
                       </div>
 
-                      <div>
+                      <div className="min-w-0">
                         <h3
                           data-aos="fade-left"
                           className="text-2xl font-semibold text-white"
@@ -305,7 +303,7 @@ hover:shadow-[0_0_40px_rgba(56,189,248,.15)]
                           GitHub
                         </h3>
 
-                        <p className="text-lg text-slate-400">
+                        <p className="break-words text-lg text-slate-400">
                           github.com/ProgrammerMuzamil-dev
                         </p>
                       </div>
@@ -341,7 +339,7 @@ hover:shadow-[0_0_40px_rgba(56,189,248,.15)]
   "
                   >
                     {/* Left Side */}
-                    <div className="flex items-center gap-5">
+                    <div className="flex min-w-0 flex-1 items-center gap-5">
                       <div
                         className="
         h-16 w-16
@@ -357,7 +355,7 @@ hover:shadow-[0_0_40px_rgba(56,189,248,.15)]
                         <FaLinkedinIn className="text-3xl text-blue-400" />
                       </div>
 
-                      <div>
+                      <div className="min-w-0">
                         <h3
                           data-aos="fade-left"
                           className="text-2xl font-semibold text-white"
@@ -365,7 +363,7 @@ hover:shadow-[0_0_40px_rgba(56,189,248,.15)]
                           LinkedIn
                         </h3>
 
-                        <p className="text-lg text-slate-400">
+                        <p className="break-words text-lg text-slate-400">
                           linkedin.com/in/your-profile
                         </p>
                       </div>
@@ -391,11 +389,11 @@ hover:shadow-[0_0_40px_rgba(56,189,248,.15)]
                       className="     
                       hover:scale-105        
         h-16 w-16
-        flex items-center justify-center
+         flex items-center justify-center
         rounded-2xl
-        bg-green-500/10
-        border border-green-400/20
-        shadow-[0_0_20px_rgba(34,197,94,0.25)]
+        bg-blue-500/10
+        border border-blue-400/20
+        shadow-[0_0_20px_rgba(59,130,246,0.25)]
         transition-all duration-500
         group-hover:scale-110
       "
@@ -407,11 +405,11 @@ hover:shadow-[0_0_40px_rgba(56,189,248,.15)]
                     <li
                       className="             
         h-16 w-16
-        flex items-center justify-center
+         flex items-center justify-center
         rounded-2xl
-        bg-green-500/10
-        border border-green-400/20
-        shadow-[0_0_20px_rgba(34,197,94,0.25)]
+        bg-blue-500/10
+        border border-blue-400/20
+        shadow-[0_0_20px_rgba(59,130,246,0.25)]
         transition-all duration-500
         group-hover:scale-110 hover:scale-105 
       "
@@ -423,11 +421,11 @@ hover:shadow-[0_0_40px_rgba(56,189,248,.15)]
                     <li
                       className="             
         h-16 w-16
-        flex items-center justify-center
+     flex items-center justify-center
         rounded-2xl
-        bg-green-500/10
-        border border-green-400/20
-        shadow-[0_0_20px_rgba(34,197,94,0.25)]
+        bg-blue-500/10
+        border border-blue-400/20
+        shadow-[0_0_20px_rgba(59,130,246,0.25)]
         transition-all duration-500
         group-hover:scale-110 hover:scale-105 
       "
@@ -454,7 +452,7 @@ hover:shadow-[0_0_40px_rgba(56,189,248,.15)]
                     className="relative z-10"
                   >
                     <span className="inline-flex items-center gap-2 px-4 py-1 text-sm font-medium tracking-widest uppercase border rounded-full border-cyan-400/20 bg-cyan-500/10 text-cyan-300">
-                      ✨ Your Turn
+                      Your Turn
                     </span>
 
                     <h2 className="mt-4 text-4xl font-bold text-white">
@@ -491,12 +489,7 @@ hover:shadow-[0_0_40px_rgba(56,189,248,.15)]
                   />
                 </div>
 
-                <InputBox
-                  data-aos="fade-right"
-                  icon={<FaTag />}
-                  placeholder="Subject"
-                  type="text"
-                />
+                <InputBox icon={<FaTag />} placeholder="Subject" type="text" />
 
                 <MessageBox />
 
@@ -540,7 +533,6 @@ hover:shadow-[0_0_40px_rgba(56,189,248,.15)]
               </form>
             </div>
           </div>
-          <div></div>
         </div>
       </section>
     </>

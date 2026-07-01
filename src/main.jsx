@@ -6,7 +6,7 @@ import Layout from "./Layout.jsx";
 import Home from "./pages/Home/Home.jsx";
 import AboutMe from "./pages/AboutMe/AboutMe.jsx";
 import ContectMe from "./pages/ContectMe/ContectMe.jsx";
-
+import Projects from "./pages/Projects/Projects.jsx";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -14,6 +14,8 @@ const router = createBrowserRouter([
     children: [
       { index: true, element: <Home /> },
       { path: "AboutMe", element: <AboutMe /> },
+      { path: "Projects", element: <Projects /> },
+
       { path: "ContectMe", element: <ContectMe /> },
     ],
   },

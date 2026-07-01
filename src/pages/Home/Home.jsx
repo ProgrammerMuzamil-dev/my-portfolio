@@ -65,15 +65,7 @@ function Home() {
               interfaces and meaningful user experiences.
             </p>
 
-            <div className="flex gap-4 mt-10">
-              <button
-                data-aos="fade-up"
-                data-aos-delay="400"
-                className="px-3 border uppercase border-[#38BDF8] hover:bg-[#0EA5E9] py-2 rounded-lg text-sm font-medium transition-all duration-300 text-[#F8FAFC] hover:text-[#0F172A]"
-              >
-                View Projects
-              </button>
-
+            <div className="flex mt-10">
               <button
                 data-aos="fade-up"
                 data-aos-delay="400"

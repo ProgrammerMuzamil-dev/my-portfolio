@@ -1,7 +1,7 @@
 function InputBox({ icon, placeholder, type = "text" }) {
   return (
-    <div className="relative">
-      <div className="absolute text-xl -translate-y-1/2 left-5 top-1/2 text-cyan-400">
+    <div className="group relative w-full">
+      <div className="absolute z-10 text-xl -translate-y-1/2 pointer-events-none left-5 top-1/2 text-cyan-400 transition-all duration-300 group-focus-within:text-cyan-300">
         {icon}
       </div>
 
@@ -25,6 +25,7 @@ function InputBox({ icon, placeholder, type = "text" }) {
         duration-500
         focus:border-cyan-400
         focus:shadow-[0_0_30px_rgba(56,189,248,.35)]
+        focus:translate-y-[-1px]
         hover:border-cyan-300/40
       "
       />
