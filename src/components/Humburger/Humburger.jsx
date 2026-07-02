@@ -9,6 +9,10 @@ function Humburger() {
     ` py-4 px-3     text-center rounded-lg text-sm font-medium transition-all duration-300 ${
       isActive ? "text-[#38BDF8]" : "text-[#CBD5E1]"
     } hover:text-[#F8FAFC]`;
+  const mailtoHref = `mailto:mmprogrammer.dev@gmail.com?subject=${encodeURIComponent(
+    "Let's Work Together"
+  )}`;
+
   return (
     <div>
       <button onClick={() => setOpen(!open)} className="relative z-[1000]">
@@ -53,9 +57,13 @@ function Humburger() {
             </NavLink>
           </div>
           <div className="p-6 mt-5">
-            <button className="w-full rounded-xl border border-sky-400 bg-sky-500/90 py-3 font-semibold text-sky-300 transition-all duration-300 hover:bg-sky-500 hover:text-slate-900 hover:shadow-[0_0_25px_rgba(56,189,248,0.5)]">
+            <a
+              href={mailtoHref}
+              onClick={() => setOpen(false)}
+              className="block w-full rounded-xl border border-sky-400 bg-sky-500/90 py-3 text-center font-semibold text-sky-300 transition-all duration-300 hover:bg-sky-500 hover:text-slate-900 hover:shadow-[0_0_25px_rgba(56,189,248,0.5)]"
+            >
               Get In Touch
-            </button>
+            </a>
           </div>
         </div>
       )}

@@ -50,11 +50,13 @@ function Projects() {
           >
             <div className="relative overflow-hidden">
               <div className="absolute inset-0 transition-all duration-500 scale-110 opacity-0 bg-cyan-400/20 blur-3xl group-hover:opacity-100"></div>
-              <img
-                src={project.image}
-                alt={project.title}
-                className="relative z-10 object-cover w-full h-64 transition-all duration-500 group-hover:scale-110 group-hover:brightness-110"
-              />
+              <a href={project.liveUrl} target="_blank" className="block">
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="relative z-10 object-cover w-full h-64 transition-all duration-500 group-hover:scale-110 group-hover:brightness-110"
+                />
+              </a>
             </div>
 
             <div className="p-6">
@@ -63,6 +65,17 @@ function Projects() {
               </h2>
 
               <p className="mt-3 text-slate-400">{project.category}</p>
+
+              <div className="flex flex-wrap gap-2 mt-4">
+                {project.tech.map((techItem) => (
+                  <span
+                    key={techItem}
+                    className="pointer-events-none rounded-full border border-cyan-400/30 bg-cyan-400/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-cyan-300"
+                  >
+                    {techItem}
+                  </span>
+                ))}
+              </div>
             </div>
           </div>
         ))}

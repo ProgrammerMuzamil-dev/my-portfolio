@@ -32,6 +32,9 @@ function ContectMe() {
       once: true,
     });
   }, []);
+  const mailtoHref = `mailto:muzamil692008@gmail.com?subject=${encodeURIComponent(
+    "Let's Work Together",
+  )}`;
   return (
     <>
       <section className="mt-10 overflow-hidden">
@@ -114,7 +117,7 @@ hover:shadow-[0_0_40px_rgba(56,189,248,.15)]
 "
                   >
                     {/* Left Side */}
-                    <div className="flex min-w-0 flex-1 items-center gap-5">
+                    <div className="flex items-center flex-1 min-w-0 gap-5">
                       <div
                         className="
       h-16 w-16
@@ -138,7 +141,7 @@ hover:shadow-[0_0_40px_rgba(56,189,248,.15)]
                           Email
                         </h3>
 
-                        <p className="break-words text-lg text-slate-400">
+                        <p className="text-lg break-words text-slate-400">
                           muzamil692008@gmail.com
                         </p>
                       </div>
@@ -146,7 +149,10 @@ hover:shadow-[0_0_40px_rgba(56,189,248,.15)]
 
                     {/* Right Icon */}
                     <div className="flex items-center justify-center transition-all duration-500 border rounded-full h-14 w-14 bg-cyan-500/10 border-cyan-400/20 text-cyan-400 group-hover:rotate-12 group-hover:scale-110">
-                      <FaPaperPlane className="text-xl" />
+                      <a href={mailtoHref}>
+                        {" "}
+                        <FaPaperPlane className="text-xl" />
+                      </a>
                     </div>
                   </li>
                   <li
@@ -168,7 +174,7 @@ hover:shadow-[0_0_40px_rgba(56,189,248,.15)]
   "
                   >
                     {/* Left Side */}
-                    <div className="flex min-w-0 flex-1 items-center gap-5">
+                    <div className="flex items-center flex-1 min-w-0 gap-5">
                       <div
                         className="
         h-16 w-16
@@ -192,15 +198,17 @@ hover:shadow-[0_0_40px_rgba(56,189,248,.15)]
                           Phone
                         </h3>
 
-                        <p className="break-words text-lg text-slate-400">
-                          +92 345 9842961
+                        <p className="text-lg break-words text-slate-400">
+                          <a href="tel:+923459848961">+92 345848961</a>
                         </p>
                       </div>
                     </div>
 
                     {/* Right Icon */}
                     <div className="flex items-center justify-center text-green-400 transition-all duration-500 border rounded-full h-14 w-14 bg-green-500/10 border-green-400/20 group-hover:rotate-12 group-hover:scale-110">
-                      <FaWhatsapp className="text-2xl" />
+                      <a href="tel:+923459848961">
+                        <FaWhatsapp className="text-2xl" />
+                      </a>
                     </div>
                   </li>
 
@@ -224,7 +232,7 @@ hover:shadow-[0_0_40px_rgba(56,189,248,.15)]
   "
                   >
                     {/* Left Side */}
-                    <div className="flex min-w-0 flex-1 items-center gap-5">
+                    <div className="flex items-center flex-1 min-w-0 gap-5">
                       <div
                         className="
         h-16 w-16
@@ -248,7 +256,7 @@ hover:shadow-[0_0_40px_rgba(56,189,248,.15)]
                           Location
                         </h3>
 
-                        <p className="break-words text-lg text-slate-400">
+                        <p className="text-lg break-words text-slate-400">
                           Tank , KpK , Pakistan
                         </p>
                       </div>
@@ -279,7 +287,7 @@ hover:shadow-[0_0_40px_rgba(56,189,248,.15)]
   "
                   >
                     {/* Left Side */}
-                    <div className="flex min-w-0 flex-1 items-center gap-5">
+                    <div className="flex items-center flex-1 min-w-0 gap-5">
                       <div
                         className="
         h-16 w-16
@@ -303,7 +311,7 @@ hover:shadow-[0_0_40px_rgba(56,189,248,.15)]
                           GitHub
                         </h3>
 
-                        <p className="break-words text-lg text-slate-400">
+                        <p className="text-lg break-words text-slate-400">
                           github.com/ProgrammerMuzamil-dev
                         </p>
                       </div>
@@ -339,7 +347,7 @@ hover:shadow-[0_0_40px_rgba(56,189,248,.15)]
   "
                   >
                     {/* Left Side */}
-                    <div className="flex min-w-0 flex-1 items-center gap-5">
+                    <div className="flex items-center flex-1 min-w-0 gap-5">
                       <div
                         className="
         h-16 w-16
@@ -363,7 +371,7 @@ hover:shadow-[0_0_40px_rgba(56,189,248,.15)]
                           LinkedIn
                         </h3>
 
-                        <p className="break-words text-lg text-slate-400">
+                        <p className="text-lg break-words text-slate-400">
                           linkedin.com/in/your-profile
                         </p>
                       </div>
@@ -385,52 +393,18 @@ hover:shadow-[0_0_40px_rgba(56,189,248,.15)]
                   className="flex items-center justify-center"
                 >
                   <ul className="flex items-center justify-start gap-5 mt-10">
-                    <li
-                      className="     
-                      hover:scale-105        
-        h-16 w-16
-         flex items-center justify-center
-        rounded-2xl
-        bg-blue-500/10
-        border border-blue-400/20
-        shadow-[0_0_20px_rgba(59,130,246,0.25)]
-        transition-all duration-500
-        group-hover:scale-110
-      "
-                    >
-                      <a href="">
+                    <li className="bg-[#38BDF8] hover:scale-110 hover:bg-[#0EA5E9] transition-all duration-300 p-2 rounded-2xl">
+                      <a href="https://github.com/ProgrammerMuzamil-dev">
                         <img width={30} src={github} alt="GitHub" />
                       </a>
                     </li>
-                    <li
-                      className="             
-        h-16 w-16
-         flex items-center justify-center
-        rounded-2xl
-        bg-blue-500/10
-        border border-blue-400/20
-        shadow-[0_0_20px_rgba(59,130,246,0.25)]
-        transition-all duration-500
-        group-hover:scale-110 hover:scale-105 
-      "
-                    >
+                    <li className="bg-[#38BDF8] hover:scale-110 hover:bg-[#0EA5E9] transition-all duration-300 p-2 rounded-2xl">
                       <a href="">
                         <img width={40} src={linkedin} alt="LinkedIn" />
                       </a>
                     </li>
-                    <li
-                      className="             
-        h-16 w-16
-     flex items-center justify-center
-        rounded-2xl
-        bg-blue-500/10
-        border border-blue-400/20
-        shadow-[0_0_20px_rgba(59,130,246,0.25)]
-        transition-all duration-500
-        group-hover:scale-110 hover:scale-105 
-      "
-                    >
-                      <a href="">
+                    <li className="bg-[#38BDF8] hover:scale-110 hover:bg-[#0EA5E9] transition-all duration-300 p-2 rounded-2xl">
+                      <a href={mailtoHref}>
                         <img width={30} src={email} alt="Email" />
                       </a>
                     </li>

@@ -154,10 +154,6 @@ function AboutMe() {
   return (
     <section>
       <div className="p-5 overflow-hidden">
-        {/* <div className="absolute -top-40 -left-32 w-[450px] h-[450px] rounded-full bg-[#38BDF8]/10 blur-[120px]">
-          <div className="absolute top-96 -right-40 w-[380px] h-[380px] rounded-full bg-cyan-500/10 blur-[120px]"></div>
-        </div> */}
-
         <div
           data-aos="fade-down"
           className="relative max-w-4xl py-20 mx-auto text-center"
@@ -168,7 +164,7 @@ function AboutMe() {
 
           <h1 className="mt-8 text-5xl md:text-7xl font-black leading-tight text-[#F8FAFC]">
             Passionate
-            <span className="block bg-gradient-to-r from-[#38BDF8] via-cyan-300 to-blue-500 bg-clip-text text-transparent">
+            <span className="block  bg-gradient-to-r from-[#38BDF8] via-cyan-300 to-blue-500 bg-clip-text text-transparent">
               Front-end Developer
             </span>
           </h1>
@@ -179,7 +175,7 @@ function AboutMe() {
             skills through real-world projects.
           </p>
 
-          <div className="flex flex-wrap justify-center gap-5 mt-10">
+          <div className="flex text-[#CBD5E1] pointer-events-none flex-wrap justify-center gap-5 mt-10">
             <div className="px-6 py-3 border rounded-full bg-white/5 border-white/10 backdrop-blur-xl">
               Front-end Developer
             </div>

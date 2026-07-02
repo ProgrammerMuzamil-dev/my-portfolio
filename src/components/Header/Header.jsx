@@ -8,18 +8,24 @@ function Header() {
       isActive ? "text-[#38BDF8]" : "text-[#CBD5E1]"
     } hover:text-[#F8FAFC]`;
 
+  const mailtoHref = `mailto:muzamil692008@gmail.com?subject=${encodeURIComponent(
+    "Let's Work Together",
+  )}`;
+
   return (
     <>
       <header className="sticky top-0 z-50 bg-[#1E293B]">
         {" "}
         <div className="flex items-center p-5 justify-evenly">
           <div>
-            <img
-              width={70}
-              className="rounded-xl"
-              src={logo}
-              alt="LogoOfMine"
-            />
+            <NavLink href="/">
+              <img
+                width={70}
+                className="rounded-xl"
+                src={logo}
+                alt="LogoOfMine"
+              />
+            </NavLink>
           </div>
           <section className="hidden md:block ">
             <div className="flex gap-5 md:gap-32">
@@ -38,9 +44,12 @@ function Header() {
                 </NavLink>
               </div>
               <div>
-                <button className="px-3 border uppercase border-[#38BDF8] hover:bg-[#0EA5E9] py-2 rounded-lg text-sm font-medium transition-all duration-300 text-[#F8FAFC] hover:text-[#0F172A]">
-                  Get In Touch
-                </button>
+                <a
+                  href={mailtoHref}
+                  className="px-3 border uppercase border-[#38BDF8] hover:bg-[#0EA5E9] py-2 rounded-lg text-sm font-medium transition-all duration-300 text-[#F8FAFC] hover:text-[#0F172A]"
+                >
+                  Get in Touch
+                </a>
               </div>
             </div>
           </section>

@@ -17,7 +17,9 @@ function Home() {
     link.click();
     document.body.removeChild(link);
   };
-
+  const mailtoHref = `mailto:muzamil692008@gmail.com?subject=${encodeURIComponent(
+    "Let's Work Together",
+  )}`;
   useEffect(() => {
     AOS.init({
       duration: 1000,
@@ -31,12 +33,12 @@ function Home() {
         <div className="grid items-center w-full grid-cols-1 gap-16 lg:grid-cols-2">
           {/* LEFT */}
           <div>
-            <p className="mb-4 text-xl text-sky-400">Hi, I'm 👋</p>
+            <p className="mb-4 text-xl text-sky-400">Hi, I'm </p>
 
             <h1
               data-aos="fade-rght"
               data-aos-delay="100"
-              className="text-6xl font-bold leading-tight text-white lg:text-8xl"
+              className="text-5xl font-bold leading-tight text-white lg:text-6xl"
             >
               Muhammad
               <br />
@@ -46,7 +48,7 @@ function Home() {
             <div
               data-aos="fade-right"
               data-aos-delay="200"
-              className="mt-6 text-[#94a3b8] space-y-2"
+              className="mt-6 text-xl font-medium text-[#CBD5E1] space-y-2"
             >
               <p className="typewriter typewriter-1">Frontend Developer</p>
 
@@ -77,18 +79,18 @@ function Home() {
             </div>
 
             <ul className="flex items-center justify-start gap-5 mt-10">
-              <li>
-                <a href="">
+              <li className="bg-[#38BDF8] hover:scale-110 hover:bg-[#0EA5E9] transition-all duration-300 p-2 rounded-2xl">
+                <a href="https://github.com/ProgrammerMuzamil-dev">
                   <img width={30} src={github} alt="GitHub" />
                 </a>
               </li>
-              <li>
+              <li className="bg-[#38BDF8] hover:scale-110 hover:bg-[#0EA5E9] transition-all duration-300 p-2 rounded-2xl">
                 <a href="">
                   <img width={40} src={linkedin} alt="LinkedIn" />
                 </a>
               </li>
-              <li>
-                <a href="">
+              <li className="bg-[#38BDF8] hover:scale-110 hover:bg-[#0EA5E9] transition-all duration-300 p-2 rounded-2xl">
+                <a href={mailtoHref}>
                   <img width={30} src={email} alt="Email" />
                 </a>
               </li>
