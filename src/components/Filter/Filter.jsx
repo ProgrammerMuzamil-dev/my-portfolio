@@ -5,11 +5,13 @@ function Filter({ activeFilter, setActiveFilter }) {
 
   return (
     <>
-      <section className="overflow-hidden">
+      <section className="overflow-hidden" data-aos="fade-up">
         <div className="bg-[#334155] max-w-max w-full flex justify-center items-center gap-3 p-5 rounded-2xl border border-[#475569]  hover:bg-[#475569] hover:scale-x-105 transition-all duration-300 ">
-          {filters.map((filter) => (
+          {filters.map((filter, index) => (
             <button
               key={filter}
+              data-aos="fade-right"
+              data-aos-delay={`${index * 80}`}
               onClick={() => setActiveFilter(filter)}
               className={`
              px-3 py-2 rounded-lg border uppercase text-sm font-medium transition-all duration-300

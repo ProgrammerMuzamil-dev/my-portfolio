@@ -1,16 +1,27 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import Filter from "../../components/Filter/Filter";
 import { projects } from "../../projectsDeatial/projects.js";
 
 function Projects() {
   const [activeFilter, setActiveFilter] = useState("All");
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      easing: "ease-out-cubic",
+      once: true,
+    });
+  }, []);
+
   const displayData =
     activeFilter === "All"
       ? projects
       : projects.filter((project) => project.category === activeFilter);
   return (
     <div>
-      <section className="mt-10 overflow-hidden">
+      <section className="mt-10 overflow-hidden" data-aos="fade-down">
         <div className="flex items-center justify-center gap-2">
           <span className="h-[2rem] rounded-md w-full bg-gradient-to-r from-transparent to-cyan-400"></span>
           <span className="uppercase  tracking-[0.35em] text-sm font-semibold text-cyan-400">
@@ -18,20 +29,31 @@ function Projects() {
           </span>
           <span className="h-[2rem] rounded-md w-full bg-gradient-to-l from-transparent to-cyan-400"></span>
         </div>
-        <p className="max-w-3xl mx-auto mt-6 text-lg leading-8 md:text-xl text-[#94A3B8]  text-center">
+        <p
+          className="max-w-3xl mx-auto mt-6 text-lg leading-8 md:text-xl text-[#94A3B8]  text-center"
+          data-aos="fade-up"
+        >
           Explore a collection of projects that reflect my journey as a frontend
           developer. From responsive landing pages to interactive web
           applications, each project demonstrates my focus on clean code, modern
           UI, and seamless user experiences.
         </p>
       </section>
-      <section className="flex items-center justify-center mt-8">
+      <section
+        className="flex items-center justify-center mt-8"
+        data-aos="fade-up"
+      >
         <Filter activeFilter={activeFilter} setActiveFilter={setActiveFilter} />
       </section>
-      <section className="grid grid-cols-1 gap-8 px-6 mt-10 md:grid-cols-2 xl:grid-cols-3">
-        {displayData.map((project) => (
+      <section
+        className="grid grid-cols-1 gap-8 px-6 mt-10 md:grid-cols-2 xl:grid-cols-3"
+        data-aos="fade-up"
+      >
+        {displayData.map((project, index) => (
           <div
             key={project.id}
+            data-aos="zoom-in"
+            data-aos-delay={`${index * 100}`}
             className="
         group
         overflow-hidden
